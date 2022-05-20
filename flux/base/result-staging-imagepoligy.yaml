@@ -3,7 +3,7 @@ apiVersion: image.toolkit.fluxcd.io/v1beta1
 kind: ImagePolicy
 metadata:
   name: result
-  namespace: flux-system
+  namespace: instavote
 spec:
   filterTags:
     extract: $ts

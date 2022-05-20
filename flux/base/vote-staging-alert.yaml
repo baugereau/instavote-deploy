@@ -3,7 +3,7 @@ apiVersion: notification.toolkit.fluxcd.io/v1beta1
 kind: Alert
 metadata:
   name: vote-staging
-  namespace: flux-system
+  namespace: instavote
 spec:
   eventSeverity: info
   eventSources:
