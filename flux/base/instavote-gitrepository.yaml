@@ -12,5 +12,5 @@ spec:
   timeout: 1m0s
   secretRef:
     name: github-instavote
-  url: https://github.com/baugereau/instavote.git
+  url: https://github.com/baugereau/instavote-deploy.git
 

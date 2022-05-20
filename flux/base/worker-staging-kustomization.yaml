@@ -12,7 +12,7 @@ spec:
     name: worker
     namespace: instavote
   interval: 1h
-  path: ./deploy/worker/staging
+  path: ./kustomize/worker/staging
   prune: true
   sourceRef:
     kind: GitRepository
