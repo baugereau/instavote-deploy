@@ -20,6 +20,6 @@ spec:
         tier: back
     spec:
       containers:
-      - image: schoolofdevops/worker:latest
+      - image: baugereau/worker
         name: worker
         resources: {}

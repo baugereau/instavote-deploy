@@ -2,17 +2,15 @@
 apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
 kind: Kustomization
 metadata:
-  name: worker-staging
-  namespace: flux-system
+  name: redis-staging
+  namespace: instavote
 spec:
-  dependsOn:
-  - name: redis-staging
   healthChecks:
   - kind: Deployment
-    name: worker
+    name: redis
     namespace: instavote
   interval: 1h
-  path: ./kustomize/worker/staging
+  path: ./kustomize/redis/staging
   prune: true
   sourceRef:
     kind: GitRepository

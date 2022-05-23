@@ -12,5 +12,5 @@ spec:
   template:
     spec:
       containers:
-        - image: schoolofdevops/worker:latest
+        - image: baugereau/worker
         name: worker

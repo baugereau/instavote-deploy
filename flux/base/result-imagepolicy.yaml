@@ -2,14 +2,14 @@
 apiVersion: image.toolkit.fluxcd.io/v1beta1
 kind: ImagePolicy
 metadata:
-  name: vote
-  namespace: flux-system
+  name: result
+  namespace: instavote
 spec:
   filterTags:
     extract: $ts
     pattern: ^main-[a-f0-9]+-(?P<ts>[0-9]+)
   imageRepositoryRef:
-    name: vote
+    name: result
   policy:
     numerical:
       order: asc

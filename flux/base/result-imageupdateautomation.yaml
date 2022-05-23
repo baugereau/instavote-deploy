@@ -2,8 +2,8 @@
 apiVersion: image.toolkit.fluxcd.io/v1beta1
 kind: ImageUpdateAutomation
 metadata:
-  name: vote
-  namespace: flux-system
+  name: result
+  namespace: instavote
 spec:
   git:
     checkout:
@@ -21,6 +21,6 @@ spec:
     kind: GitRepository
     name: instavote-deploy
   update:
-    path: ./kustomize/vote/staging
+    path: ./helm/charts/result
     strategy: Setters
 

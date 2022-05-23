@@ -11,7 +11,7 @@ spec:
   template:
     spec:
       containers:
-      - image: schoolofdevops/vote:v3
+      - image: baugereau/vote
         name: vote
         envFrom:
           - configMapRef:
