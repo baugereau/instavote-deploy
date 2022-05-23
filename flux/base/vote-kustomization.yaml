@@ -10,7 +10,7 @@ spec:
     name: vote
     namespace: instavote
   interval: 1h
-  path: ./kustomize/vote/staging
+  path: ./
   prune: true
   sourceRef:
     kind: GitRepository

@@ -10,7 +10,7 @@ spec:
     name: redis
     namespace: instavote
   interval: 1h
-  path: ./kustomize/redis/staging
+  path: ./
   prune: true
   sourceRef:
     kind: GitRepository
